@@ -44,3 +44,7 @@ PRODUCT_PACKAGES += \
     messaging \
     Stk \
     CellBroadcastReceiver
+
+# Cutout control overlay
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
