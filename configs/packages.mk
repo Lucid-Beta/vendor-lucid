@@ -34,6 +34,10 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     LucidThemesStub
 
+# FontOverlays
+PRODUCT_PACKAGES += \
+    FontGoogleSansOverlay
+
 # Device Personalization Services
 PRODUCT_PACKAGES += MatchmakerPrebuilt
 
