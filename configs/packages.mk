@@ -27,6 +27,7 @@ PRODUCT_PACKAGES += \
 
 # Lucid Packages
 PRODUCT_PACKAGES += \
+    LucidCovers \
     LucidLauncher \
     Longshot \
     ThemePicker \
