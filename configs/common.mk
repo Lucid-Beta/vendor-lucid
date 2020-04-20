@@ -49,7 +49,7 @@ ifndef LUCID_BUILDTYPE
   LUCID_BUILDTYPE := unofficial
 endif
 
-LUCID_TARGET_ZIP := lucid-$(LUCID_BUILD)-Q-$(LUCID_VERSION)-$(shell date -u +%Y%m%d)-$(LUCID_BUILDTYPE).zip
+LUCID_TARGET_ZIP := $(PRODUCT_OUT)/lucid-$(LUCID_BUILD)-Q-$(LUCID_VERSION)-$(shell date -u +%Y%m%d)-$(LUCID_BUILDTYPE).zip
 
 # Props
 include vendor/lucid/configs/props.mk
