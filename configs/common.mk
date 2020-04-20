@@ -41,15 +41,7 @@ PRODUCT_COPY_FILES += \
     vendor/lucid/configs/permissions/backup.xml:system/etc/sysconfig/backup.xml
 
 # Branding stuffs
-LUCID_VERSION := 1.0
-LUCID_VERSION_CODE := Queen-Cake
-LUCID_BUILD_NUMBER := LPBN.Q0202.$(shell date -u +%d).$(shell date -u +%m)001
-
-ifndef LUCID_BUILDTYPE
-  LUCID_BUILDTYPE := unofficial
-endif
-
-LUCID_TARGET_ZIP := lucid-$(LUCID_BUILD)-Q-$(LUCID_VERSION)-$(shell date -u +%Y%m%d)-$(LUCID_BUILDTYPE).zip
+include vendor/lucid/configs/branding.mk
 
 # Props
 include vendor/lucid/configs/props.mk
