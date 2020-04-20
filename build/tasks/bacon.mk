@@ -15,8 +15,10 @@
 # -----------------------------------------------------------------
 # Lucid OTA update package
 
+LUCID_TARGET_PACKAGE := $(PRODUCT_OUT)/lucid-$(LUCID_VERSION).zip
+
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
-	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(LUCID_TARGET_ZIP)
-	$(hide) $(MD5SUM) $(LUCID_TARGET_ZIP) | sed "s|$(PRODUCT_OUT)/||" > $(LUCID_TARGET_ZIP).md5sum
-	@echo "Package Complete: $(LUCID_TARGET_ZIP)" >&2
+	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(LUCID_TARGET_PACKAGE)
+	$(hide) $(MD5SUM) $(LUCID_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(LUCID_TARGET_PACKAGE).md5sum
+	@echo "Package Complete: $(LUCID_TARGET_PACKAGE)" >&2
