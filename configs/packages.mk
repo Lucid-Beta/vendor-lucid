@@ -30,6 +30,7 @@ PRODUCT_PACKAGES += \
     LucidCovers \
     LucidLauncher \
     Longshot \
+    MarkupGoogle \
     ThemePicker \
     LucidThemesStub
 
