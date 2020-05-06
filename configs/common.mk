@@ -23,6 +23,11 @@ include vendor/lucid/configs/fonts.mk
 # Common overlays
 DEVICE_PACKAGE_OVERLAYS += vendor/lucid/overlay
 
+# Markup Google
+PRODUCT_COPY_FILES += \
+    vendor/lucid/prebuilt/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
+    vendor/lucid/prebuilt/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
+
 # Packages
 include vendor/lucid/configs/packages.mk
 
