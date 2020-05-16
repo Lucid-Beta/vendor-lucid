@@ -31,6 +31,7 @@ PRODUCT_PACKAGES += \
     LucidLauncher \
     Longshot \
     MarkupGoogle \
+    SettingsIntelligenceGooglePrebuilt \
     ThemePicker \
     LucidThemesStub
 
